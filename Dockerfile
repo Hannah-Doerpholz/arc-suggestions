@@ -1,5 +1,6 @@
 FROM ubuntu:latest
-RUN apt-get install python3
+RUN python --version
+RUN apt-get install -y python3
 WORKDIR /src
 COPY "src/scripts" .
 RUN python "./hello.py"
