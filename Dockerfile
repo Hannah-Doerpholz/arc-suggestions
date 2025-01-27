@@ -1,5 +1,5 @@
-FROM docker:latest
-RUN apk add --no-cache python3 py3-pip
+FROM ubuntu:latest
+RUN pip install python3
 WORKDIR /src
 COPY "src/scripts" .
 RUN python "./hello.py"
